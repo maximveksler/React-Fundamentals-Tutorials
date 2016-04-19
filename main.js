@@ -8,16 +8,4 @@ import App from './App'
 //   }
 // }
 
-App.propTypes = {
-  txt: React.PropTypes.string,
-  cat: React.PropTypes.number.isRequired
-}
-
-App.defaultProps = {
-  txt: 'this is the default text',
-
-}
-ReactDOM.render(
-  <App cat={5} OTHERtxt="this is the props text"/>,
-  document.getElementById('app')
-)
+ReactDOM.render(<App />, document.getElementById('app'))
