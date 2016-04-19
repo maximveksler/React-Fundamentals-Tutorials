@@ -16,12 +16,13 @@ class App extends React.Component {
   render(){
     return (
       <div>
+        {this.state.red}
         <NumInput
           ref="red"
           min={0}
           max={255}
           step={0.01}
-          value={+this.state.red}
+          val={+this.state.red}
           type="number"
           label="Red"
           update={this.update} />
@@ -35,6 +36,8 @@ class NumInput extends React.Component {
   render(){
     let label = this.props.label !== '' ?
       <label>{this.props.label} - {this.props.val}</label> : ''
+
+    console.log(label);
 
     return (
       <div>
