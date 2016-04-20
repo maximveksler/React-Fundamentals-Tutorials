@@ -1,40 +1,187 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'webpack-dev-server',
+1 verbose cli   '-g' ]
 2 info using npm@2.15.1
 3 info using node@v4.4.3
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart react@1.0.0
-6 info start react@1.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info react@1.0.0 Failed to exec start script
-9 verbose stack Error: react@1.0.0 start: `webpack-dev-server`
-9 verbose stack Exit status 1
-9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at EventEmitter.emit (events.js:172:7)
-9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at ChildProcess.emit (events.js:172:7)
-9 verbose stack     at maybeClose (internal/child_process.js:827:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-10 verbose pkgid react@1.0.0
-11 verbose cwd /Users/mveksler/Developer/react
-12 error Darwin 15.4.0
-13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
-14 error node v4.4.3
-15 error npm  v2.15.1
-16 error code ELIFECYCLE
-17 error react@1.0.0 start: `webpack-dev-server`
-17 error Exit status 1
-18 error Failed at the react@1.0.0 start script 'webpack-dev-server'.
-18 error This is most likely a problem with the react package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     webpack-dev-server
-18 error You can get information on how to open an issue for this project with:
-18 error     npm bugs react
-18 error Or if that isn't available, you can get their info via:
-18 error
-18 error     npm owner ls react
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'webpack-dev-server', null ]
+7 verbose cache add spec webpack-dev-server
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'webpack-dev-server',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'webpack-dev-server',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed webpack-dev-server@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for webpack-dev-server
+11 info addNameTag [ 'webpack-dev-server', 'latest' ]
+12 silly mapToRegistry name webpack-dev-server
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'webpack-dev-server',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'webpack-dev-server',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/webpack-dev-server
+17 verbose addNameTag registry:https://registry.npmjs.org/webpack-dev-server not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/webpack-dev-server
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 11:55:41 AM
+21 verbose request id 1e5e8f8f2a098149
+22 verbose etag "125AR0ZA3VRW4VNNCQ4CVMLF3"
+23 http request GET https://registry.npmjs.org/webpack-dev-server
+24 http 200 https://registry.npmjs.org/webpack-dev-server
+25 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 verbose headers   etag: '"EMIME531LVGZ3MCC8YIJOQFP1"',
+25 verbose headers   'content-type': 'application/json',
+25 verbose headers   'content-encoding': 'gzip',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   'content-length': '9944',
+25 verbose headers   'accept-ranges': 'bytes',
+25 verbose headers   date: 'Wed, 20 Apr 2016 08:55:41 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   age: '141',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-iad2138-IAD',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '14',
+25 verbose headers   'x-timer': 'S1461142541.886134,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 200,
+26 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly get     etag: '"EMIME531LVGZ3MCC8YIJOQFP1"',
+26 silly get     'content-type': 'application/json',
+26 silly get     'content-encoding': 'gzip',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     'content-length': '9944',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     date: 'Wed, 20 Apr 2016 08:55:41 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     age: '141',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-iad2138-IAD',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '14',
+26 silly get     'x-timer': 'S1461142541.886134,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose get saving webpack-dev-server to /Users/mveksler/.npm/registry.npmjs.org/webpack-dev-server/.cache.json
+28 verbose correctMkdir /Users/mveksler/.npm correctMkdir not in flight; initializing
+29 silly addNameTag next cb for webpack-dev-server with tag latest
+30 silly addNamed webpack-dev-server@1.14.1
+31 verbose addNamed "1.14.1" is a plain semver version for webpack-dev-server
+32 silly cache afterAdd webpack-dev-server@1.14.1
+33 verbose afterAdd /Users/mveksler/.npm/webpack-dev-server/1.14.1/package/package.json not in flight; writing
+34 verbose correctMkdir /Users/mveksler/.npm correctMkdir not in flight; initializing
+35 verbose afterAdd /Users/mveksler/.npm/webpack-dev-server/1.14.1/package/package.json written
+36 silly install resolved [ { name: 'webpack-dev-server',
+36 silly install resolved     version: '1.14.1',
+36 silly install resolved     author: { name: 'Tobias Koppers @sokra' },
+36 silly install resolved     description: 'Serves a webpack app. Updates the browser on changes.',
+36 silly install resolved     peerDependencies: { webpack: '>=1.3.0 <3' },
+36 silly install resolved     dependencies:
+36 silly install resolved      { compression: '^1.5.2',
+36 silly install resolved        'connect-history-api-fallback': '1.1.0',
+36 silly install resolved        express: '^4.13.3',
+36 silly install resolved        'http-proxy': '^1.11.2',
+36 silly install resolved        optimist: '~0.6.0',
+36 silly install resolved        'serve-index': '^1.7.2',
+36 silly install resolved        sockjs: '^0.3.15',
+36 silly install resolved        'sockjs-client': '^1.0.3',
+36 silly install resolved        'stream-cache': '~0.0.1',
+36 silly install resolved        'strip-ansi': '^3.0.0',
+36 silly install resolved        'supports-color': '^3.1.1',
+36 silly install resolved        'webpack-dev-middleware': '^1.4.0' },
+36 silly install resolved     devDependencies:
+36 silly install resolved      { 'css-loader': '~0.23.0',
+36 silly install resolved        'file-loader': '~0.8.4',
+36 silly install resolved        jade: '^1.11.0',
+36 silly install resolved        'jade-loader': '~0.8.0',
+36 silly install resolved        less: '^2.5.1',
+36 silly install resolved        'less-loader': '~2.2.0',
+36 silly install resolved        'style-loader': '~0.13.0',
+36 silly install resolved        'url-loader': '~0.5.6',
+36 silly install resolved        webpack: '^1.12.1' },
+36 silly install resolved     license: 'MIT',
+36 silly install resolved     repository:
+36 silly install resolved      { type: 'git',
+36 silly install resolved        url: 'git://github.com/webpack/webpack-dev-server.git' },
+36 silly install resolved     homepage: 'http://github.com/webpack/webpack-dev-server',
+36 silly install resolved     main: 'lib/Server.js',
+36 silly install resolved     bin: { 'webpack-dev-server': 'bin/webpack-dev-server.js' },
+36 silly install resolved     files: [ 'lib/', 'bin', 'client/', 'ssl/' ],
+36 silly install resolved     scripts: { prepublish: 'webpack ./client/live.js client/live.bundle.js --colors --config client/webpack.config.js -p && webpack ./client/index.js client/index.bundle.js --colors --config client/webpack.config.js -p' },
+36 silly install resolved     gitHead: 'eae3a0c73fb847521b42ac2accae1c0906dd6023',
+36 silly install resolved     bugs: { url: 'https://github.com/webpack/webpack-dev-server/issues' },
+36 silly install resolved     _id: 'webpack-dev-server@1.14.1',
+36 silly install resolved     _shasum: 'e51de228071258b0db6d55e0f5fee55eec6755de',
+36 silly install resolved     _from: 'webpack-dev-server@latest',
+36 silly install resolved     _npmVersion: '2.10.1',
+36 silly install resolved     _nodeVersion: '0.12.4',
+36 silly install resolved     _npmUser: { name: 'sokra', email: 'tobias.koppers@googlemail.com' },
+36 silly install resolved     maintainers: [ [Object], [Object] ],
+36 silly install resolved     dist:
+36 silly install resolved      { shasum: 'e51de228071258b0db6d55e0f5fee55eec6755de',
+36 silly install resolved        tarball: 'https://registry.npmjs.org/webpack-dev-server/-/webpack-dev-server-1.14.1.tgz' },
+36 silly install resolved     directories: {},
+36 silly install resolved     _resolved: 'https://registry.npmjs.org/webpack-dev-server/-/webpack-dev-server-1.14.1.tgz',
+36 silly install resolved     readme: 'ERROR: No README data found!' } ]
+37 info install webpack-dev-server@1.14.1 into /usr/local/lib
+38 info installOne webpack-dev-server@1.14.1
+39 verbose installOne of webpack-dev-server to /usr/local/lib not in flight; installing
+40 verbose correctMkdir /Users/mveksler/.npm/_locks correctMkdir not in flight; initializing
+41 verbose lock using /Users/mveksler/.npm/_locks/webpack-dev-server-7cf3f6a4747c9e16.lock for /usr/local/lib/node_modules/webpack-dev-server
+42 silly install write writing webpack-dev-server 1.14.1 to /usr/local/lib/node_modules/webpack-dev-server
+43 verbose unbuild lib/node_modules/webpack-dev-server
+44 silly gentlyRm /usr/local/lib/node_modules/webpack-dev-server is being purged from base /usr/local
+45 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/webpack-dev-server
+46 verbose tar unpack /Users/mveksler/.npm/webpack-dev-server/1.14.1/package.tgz
+47 verbose tar unpacking to /usr/local/lib/node_modules/webpack-dev-server
+48 silly gentlyRm /usr/local/lib/node_modules/webpack-dev-server is being purged
+49 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/webpack-dev-server
+50 silly gunzTarPerm modes [ '755', '644' ]
+51 error tar.unpack untar error /Users/mveksler/.npm/webpack-dev-server/1.14.1/package.tgz
+52 verbose unlock done using /Users/mveksler/.npm/_locks/webpack-dev-server-7cf3f6a4747c9e16.lock for /usr/local/lib/node_modules/webpack-dev-server
+53 verbose fstream_path /usr/local/lib/node_modules/webpack-dev-server
+54 verbose fstream_type Directory
+55 verbose fstream_class DirWriter
+56 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/webpack-dev-server'
+56 verbose stack     at Error (native)
+57 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+57 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+57 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+58 verbose cwd /Users/mveksler/Developer/react
+59 error Darwin 15.4.0
+60 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "webpack-dev-server" "-g"
+61 error node v4.4.3
+62 error npm  v2.15.1
+63 error path /usr/local/lib/node_modules/webpack-dev-server
+64 error code EACCES
+65 error errno -13
+66 error syscall mkdir
+67 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/webpack-dev-server'
+67 error     at Error (native)
+67 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/webpack-dev-server']
+67 error   errno: -13,
+67 error   code: 'EACCES',
+67 error   syscall: 'mkdir',
+67 error   path: '/usr/local/lib/node_modules/webpack-dev-server',
+67 error   fstream_type: 'Directory',
+67 error   fstream_path: '/usr/local/lib/node_modules/webpack-dev-server',
+67 error   fstream_class: 'DirWriter',
+67 error   fstream_stack:
+67 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+67 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+67 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+68 error Please try running this command again as root/Administrator.
+69 verbose exit [ -13, true ]
+70 verbose unbuild lib/node_modules/webpack-dev-server
+71 silly gentlyRm /usr/local/lib/node_modules/webpack-dev-server is being purged from base /usr/local
+72 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/webpack-dev-server

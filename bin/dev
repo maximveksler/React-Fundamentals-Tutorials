@@ -1,0 +1,5 @@
+#!/bin/bash
+
+node_modules/.bin/webpack-dev-server --hot
+
+( sleep 5 && echo "http://localhost:3333/webpack-dev-server/" )
