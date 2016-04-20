@@ -12,5 +12,12 @@
   "dependencies": {
     "react": "^15.0.1",
     "react-dom": "^15.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.3",
+    "eslint": "^2.8.0",
+    "eslint-plugin-react": "^5.0.1",
+    "stylelint": "^6.0.1",
+    "stylelint-config-murr": "0.0.6"
   }
 }

@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './main.js',
+  entry: ['webpack/hot/dev-server', './main.js'],
   output: {
     path: "./",
     filename: "index.js"
